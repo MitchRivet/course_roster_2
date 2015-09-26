@@ -9,7 +9,7 @@ Setup
 ----------
 * Clone repository:
 ```console
-$ git clone https://github.com/micahcourey/TicTacToe.git
+$ git clone https://github.com/micahcourey/CourseRosterAngularJS.git
 ```
 * Open 'index.html' in a browser of your choice
 * Enjoy!
