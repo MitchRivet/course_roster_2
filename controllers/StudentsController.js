@@ -13,9 +13,11 @@ courseRoster.controller("StudentCtrl", function ($scope) {
   $scope.addStudent = function(studentName) {
     $scope.course.students.push({ name: studentName });
     $scope.studentName = null;
+    alert(studentName);
   }
 
-})
+
+});
 
 courseRoster.directive("student", function () {
   return {
@@ -23,10 +25,7 @@ courseRoster.directive("student", function () {
       add:"&"
 
     },
-    template: '<input type="text" ng-model="value" class="form-control" placeholder="Enter the students name">' +
-              '<button type="submit" ng-click="add({studentName:value})" class="btn btn-info">Submit</button>'
+    template: '<input type="text" ng-model="value">' +
+            '<button type="submit" class="btn" ng-click="add({name:value})">Add student</button>'
           }
 });
-
-// '<input type="text" ng-model="value">' +
-//         '<button class="btn" ng-click="add({name:value})">Add student</button>'
