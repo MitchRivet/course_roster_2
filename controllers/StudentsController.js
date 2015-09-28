@@ -18,14 +18,3 @@ courseRoster.controller("StudentCtrl", function ($scope) {
 
 
 });
-
-courseRoster.directive("student", function () {
-  return {
-    scope:{
-      add:"&"
-
-    },
-    template: '<input type="text" ng-model="value">' +
-            '<button type="submit" class="btn" ng-click="add({name:value})">Add student</button>'
-          }
-});
