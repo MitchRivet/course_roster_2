@@ -1,11 +1,14 @@
 <div ng-show="courses.length">
   <h1>Here are all your courses:</h1>
   <ul>
-    <li ng-repeat="item in courses">
+    <li ng-repeat="item in courses" debug>
       <a ui-sref="courses.students({ courseId: item.id })">{{ item.name }}</a>
     </li>
   </ul>
 </div>
+
+
+<div samplecoursetwo coursename="math"></div>
 
 <div class="col-md-4">
   <h3>Add a new course</h3>
