@@ -10,4 +10,5 @@ courseRoster.directive("changeClass", function() {
       element.toggleClass(attrs.changeClass);
     });
   }
+
 });
